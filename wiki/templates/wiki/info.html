@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{entries.title}}
+{% endblock %}
+
+{% block body %}
+    
+
+    <ul>
+    	{% if entries %}
+
+	        <h3>{{ entries}}</h1>
+	    {% else %}
+        	<h1>Page Not Found</h1>
+	      
+        {% endif %}
+       
+
+    </ul>
+
+{% endblock %}
