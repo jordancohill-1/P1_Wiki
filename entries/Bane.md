@@ -1,0 +1,1 @@
+Is a Boxer Weimaraner mix and he is difficult, even in his old age of 8.

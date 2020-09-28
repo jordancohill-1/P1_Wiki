@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    search
+{% endblock %}
+
+{% block body %}
+    
+
+    <ul>
+
+    	{% if results %}
+    		{% for entry in results %}
+	       		 <li><h3><a href="{% url 'title' entry %}">{{ entry | safe}}</h3></a></h3></li>
+    		{% endfor %}
+	    {% else %}
+        	<h1>No Results for Your Search </h1>
+	      
+        {% endif %}
+       
+
+    </ul>
+
+{% endblock %}
